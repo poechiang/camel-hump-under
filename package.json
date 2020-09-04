@@ -1,6 +1,6 @@
 {
   "name": "@poech/camel-hump-unde",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript variable naming transformation",
   "keywords": [
     "js",
