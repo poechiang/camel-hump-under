@@ -1,11 +1,34 @@
-export const underline = ( str ) => {
-    return ( str || '' ).replace( /[A-Z-]/g, ( item ) => ( '_' + item.toLowerCase( ) ) ).split( '_' ).filter( ( item ) => ( !!item ) ).join( '_' );
-}
+"use strict";
 
-export const camel = ( str ) => {
-    return ( str || '' ).replace( /[_-][a-z]/g, ( item ) => ( item.replace( /[_-]/g, '' ).toUpperCase( ) ) );
-}
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.hump = exports.camel = exports.underline = void 0;
 
-export const hump = ( str ) => {
-    return ( str || '' ).replace( /[A-Z_]/g, ( item ) => ( '-' + item.toLowerCase( ) ) ).split( '-' ).filter( ( item ) => ( !!item ) ).join( '-' );
-}
+var underline = function underline(str) {
+  return (str || '').replace(/[A-Z-]/g, function (item) {
+    return '_' + item.toLowerCase();
+  }).split('_').filter(function (item) {
+    return !!item;
+  }).join('_');
+};
+
+exports.underline = underline;
+
+var camel = function camel(str) {
+  return (str || '').replace(/[_-][a-z]/g, function (item) {
+    return item.replace(/[_-]/g, '').toUpperCase();
+  });
+};
+
+exports.camel = camel;
+
+var hump = function hump(str) {
+  return (str || '').replace(/[A-Z_]/g, function (item) {
+    return '-' + item.toLowerCase();
+  }).split('-').filter(function (item) {
+    return !!item;
+  }).join('-');
+};
+
+exports.hump = hump;
