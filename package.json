@@ -1,6 +1,6 @@
 {
-  "name": "@poech/camel-hump-unde",
-  "version": "1.0.5",
+  "name": "@poech/camel-hump-under",
+  "version": "1.0.7",
   "description": "JavaScript variable naming transformation",
   "keywords": [
     "js",
