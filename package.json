@@ -1,6 +1,6 @@
 {
   "name": "@poech/camel-hump-unde",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JavaScript variable naming transformation",
   "keywords": [
     "js",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "bugs": "https://github.com/poechiang/camel-hump-under/issuse",
   "scripts": {
-    "build": "babel src --out-dir .",
+    "build": "gulp",
     "test": "node test/is.js",
     "prepublish": "yarn build"
   },
