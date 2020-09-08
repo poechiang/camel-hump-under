@@ -1,12 +1,15 @@
 {
   "name": "@poech/camel-hump-unde",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JavaScript variable naming transformation",
   "keywords": [
     "js",
     "underline",
     "camel",
     "hump"
+  ],
+  "files": [
+    "index.js"
   ],
   "main": "index.js",
   "repository": "git@github.com:poechiang/camel-hump-under.git",
