@@ -2,8 +2,33 @@
 
 JavaScript name conversion
 
-# Declaration
+# Install
 
-The name of this package is incorrect. It has been officially renamed @poech/camel-hump-under. Since the release operation cannot be undone, and it cannot be invalidated, we hereby make this statement and attach the new package link:
+npm
+```bash
+$ npm install @poech/camel-dump-under --dev-save
+```
 
-> 1.0.0 Deprecated @poech/camel-dump-unde,Please replace it with <kbd> [@poech/camel-dump-under](https://www.npmjs.com/package/@poech/camel-hump-under)</kbd>
+yarn
+```bash
+$ yarn add @poech/camel-hump-under -D
+```
+
+## Usage
+
+
+```js
+
+// const is = require( '@poech/camel-hump-under' );
+import chu from '@poech/camel-hump-under';
+
+const { camel, hump, hyphen, underline } = chu
+
+
+let v = 'abCde-fg-Hi_gk_Lmn';
+console.log(camel(v));		// abCdeFgHiGkLmn
+console.log(hump(v));		// AbCdeFgHiGkLmn (Capitalize the first letter)
+console.log(hyphen(v));		// ab-cde-fg-hi-gk-lmn 
+console.log(underline(v));	// ab_cde_fg_hi_gk_lmn
+```
+

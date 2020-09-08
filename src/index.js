@@ -1,11 +1,11 @@
-import camel from './camel.js';
-import underline from './underline.js';
-import hump from './hump.js';
-import hyphen from './hyphen.js';
+import camel from './lib/camel';
+import underline from './lib/underline';
+import hump from './lib/hump';
+import hyphen from './lib/hyphen';
 
 export {
-    camel,
-    underline,
-    hump,
-    hyphen
-}
+  camel,
+  underline,
+  hump,
+  hyphen
+};
